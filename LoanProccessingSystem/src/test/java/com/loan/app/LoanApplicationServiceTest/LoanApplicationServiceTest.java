@@ -29,8 +29,7 @@ import com.loan.app.service.impl.LoanApplicationServiceImpl;
  * Testing get loan application by Id and by passing all the required parameters
  * Testing update loan application by Id and passing all the required parameters
  * Testing delete loan application by Id and passing all the required parameters
- * 
- * Author : Ashwin
+ 
  * */
 
 @SpringBootTest
@@ -65,7 +64,7 @@ public class LoanApplicationServiceTest {
 		input.setCustomer(null);
 		input.setLoanAppliedAmount(190000);
 		input.setLoanApprovedAmount(90000);
-		input.setLoanVerificationManagerApproval(false);
+		input.setLoanVerificationManagerApproval(true);
 		input.setAdminApproval(true);
 		input.setStatus(Status.APPROVED);
 		
@@ -111,8 +110,8 @@ public class LoanApplicationServiceTest {
 		input.setApplicationId(101);
 		input.setApplicationDate(LocalDate.parse("2020-01-08"));
 		input.setCustomer(null);
-		input.setLoanAppliedAmount(190000);
-		input.setLoanApprovedAmount(90000);
+		input.setLoanAppliedAmount(100000);
+		input.setLoanApprovedAmount(10000);
 		input.setLoanVerificationManagerApproval(false);
 		input.setAdminApproval(true);
 		input.setStatus(null);
@@ -121,8 +120,8 @@ public class LoanApplicationServiceTest {
 		output.setApplicationId(101);
 		output.setApplicationDate(LocalDate.parse("2020-01-08"));
 		output.setCustomer(null);
-		output.setLoanAppliedAmount(190000);
-		output.setLoanApprovedAmount(90000);
+		output.setLoanAppliedAmount(100000);
+		output.setLoanApprovedAmount(10000);
 		output.setLoanVerificationManagerApproval(false);
 		output.setAdminApproval(true);
 		output.setStatus(null);
@@ -153,8 +152,8 @@ public class LoanApplicationServiceTest {
 		input.setApplicationId(101);
 		input.setApplicationDate(LocalDate.parse("2020-01-08"));
 		input.setCustomer(null);
-		input.setLoanAppliedAmount(190000);
-		input.setLoanApprovedAmount(90000);
+		input.setLoanAppliedAmount(100000);
+		input.setLoanApprovedAmount(10000);
 		input.setLoanVerificationManagerApproval(false);
 		input.setAdminApproval(true);
 		input.setStatus(null);
@@ -164,8 +163,8 @@ public class LoanApplicationServiceTest {
 		output.setApplicationId(101);
 		output.setApplicationDate(LocalDate.parse("2020-01-08"));
 		output.setCustomer(null);
-		output.setLoanAppliedAmount(190000);
-		output.setLoanApprovedAmount(90000);
+		output.setLoanAppliedAmount(100000);
+		output.setLoanApprovedAmount(10000);
 		output.setLoanVerificationManagerApproval(false);
 		output.setAdminApproval(true);
 		output.setStatus(null);

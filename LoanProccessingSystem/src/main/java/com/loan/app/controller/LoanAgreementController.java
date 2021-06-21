@@ -33,7 +33,7 @@ import io.swagger.annotations.ApiOperation;
  * "/delete" to delete the loan agreement from the database
  * "/viewallloan" to viewall the loan agreements available in the database
  * 
- * Author : Bharath Surya
+ * 
  * */
 
 
@@ -54,7 +54,7 @@ LoanAgreementService loanAgreementService;
 
 @GetMapping("/home")
 public String homeRequest() {
-	return "Welcome : Home Loan Application (Version 1.0)";
+	return "Welcome : Loan Agreement Application ";
 }
 
 @ApiOperation(value = "POST mapping to add new loan agreements to the LOAN_AGREEMENT table in the Database", response = LoanAgreement.class)

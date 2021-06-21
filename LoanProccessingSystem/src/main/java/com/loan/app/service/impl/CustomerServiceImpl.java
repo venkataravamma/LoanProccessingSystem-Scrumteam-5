@@ -29,7 +29,6 @@ import com.loan.app.service.CustomerService;
  * List<Customer> viewAllCustomers() to view all the customers in the table
  * List<Customer> viewCustomerList(LocalDate dateOfApplication) view customer details having loan agreement as per loan application date
  * 
- * Author : Anshuman Biswal
  * */
 
 @Service

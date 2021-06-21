@@ -16,7 +16,6 @@ import com.loan.app.service.UserService;
  * User signIn(User user) to sign in
  * User signOut(User user) to sign out
  * 
- * Author : Blesy Helen
  */
 
 @Service

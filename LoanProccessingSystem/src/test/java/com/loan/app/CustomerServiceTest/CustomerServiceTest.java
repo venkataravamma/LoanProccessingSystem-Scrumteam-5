@@ -32,8 +32,7 @@ import com.loan.app.service.impl.CustomerServiceImpl;
  * Testing view customer by customer Id by passing all the required parameters
  * Testing delete customer by customer Id by passing all the required parameters
  * Testing update customer details by passing all the required parameters
- * 
- * Author : Anshuman Biswal
+
  * */
 
 @SpringBootTest
@@ -66,15 +65,15 @@ import com.loan.app.service.impl.CustomerServiceImpl;
 	void testSaveCustomer() {
 		Customer customerInput = new Customer();
 		customerInput.setUserId(1);
-		customerInput.setCustomerName("Gaurav");
+		customerInput.setCustomerName("arifa");
 		customerInput.setMobileNumber("9876543210");
-		customerInput.setEmailId("gaurav0103@gmail.com");
-		customerInput.setPassword("Gaurav0103");
-		customerInput.setDateOfBirth(LocalDate.parse("2020-01-08"));
-		customerInput.setGender("Male");
+		customerInput.setEmailId("arifa0103@gmail.com");
+		customerInput.setPassword("sachin0103");
+		customerInput.setDateOfBirth(LocalDate.parse("2021-03-15"));
+		customerInput.setGender("feMale");
 		customerInput.setNationality("Indian");
-		customerInput.setAadharNumber("1231231223");
-		customerInput.setPanNumber("123456yuio");
+		customerInput.setAadharNumber("123456987654");
+		customerInput.setPanNumber("654321sidh");
 
 		when(customerRepo.save(customerInput)).thenReturn(customerInput);
 		Customer customer_test = customerService.addCustomer(customerInput);
@@ -113,27 +112,27 @@ import com.loan.app.service.impl.CustomerServiceImpl;
 	void testDeleteCustomer() throws CustomerNotFoundException {
 		Customer customerInput = new Customer();
 		customerInput.setUserId(1);
-		customerInput.setCustomerName("Gaurav");
+		customerInput.setCustomerName("arifa");
 		customerInput.setMobileNumber("9876543210");
-		customerInput.setEmailId("gaurav0103@gmail.com");
-		customerInput.setPassword("gaurav0103");
-		customerInput.setDateOfBirth(LocalDate.parse("2020-01-08"));
-		customerInput.setGender("Male");
+		customerInput.setEmailId("arifa0103@gmail.com");
+		customerInput.setPassword("sachin0103");
+		customerInput.setDateOfBirth(LocalDate.parse("2021-03-15"));
+		customerInput.setGender("feMale");
 		customerInput.setNationality("Indian");
-		customerInput.setAadharNumber("1231231223");
-		customerInput.setPanNumber("123456yuio");
+		customerInput.setAadharNumber("123456987654");
+		customerInput.setPanNumber("654321sidh");
 
 		Customer output = new Customer();
 		output.setUserId(1);
-		output.setCustomerName("Gaurav");
+		output.setCustomerName("arifa");
 		output.setMobileNumber("9876543210");
-		output.setEmailId("gaurav0103@gmail.com");
-		output.setPassword("gaurav0103");
-		output.setDateOfBirth(LocalDate.parse("2020-01-08"));
-		output.setGender("Male");
+		output.setEmailId("arifa0103@gmail.com");
+		output.setPassword("sachin0103");
+		output.setDateOfBirth(LocalDate.parse("2021-03-15"));
+		output.setGender("feMale");
 		output.setNationality("Indian");
-		output.setAadharNumber("1231231223");
-		output.setPanNumber("123456yuio");
+		output.setAadharNumber("123456987654");
+		output.setPanNumber("654321sidh");
 
 		try {
 			doNothing().when(customerRepo).delete(customerInput);
@@ -156,28 +155,28 @@ import com.loan.app.service.impl.CustomerServiceImpl;
 
 		Customer customerInput = new Customer();
 		customerInput.setUserId(1);
-		customerInput.setCustomerName("Gaurav");
+		customerInput.setCustomerName("arifa");
 		customerInput.setMobileNumber("9876543210");
-		customerInput.setEmailId("gaurav0103@gmail.com");
-		customerInput.setPassword("gaurav0103");
-		customerInput.setDateOfBirth(LocalDate.parse("2020-01-08"));
-		customerInput.setGender("Male");
+		customerInput.setEmailId("arifa0103@gmail.com");
+		customerInput.setPassword("sachin0103");
+		customerInput.setDateOfBirth(LocalDate.parse("2021-03-15"));
+		customerInput.setGender("feMale");
 		customerInput.setNationality("Indian");
-		customerInput.setAadharNumber("1231231223");
+		customerInput.setAadharNumber("123456987654");
 		customerInput.setPanNumber("123456yuio");
 
 		
 		Optional<Customer> optionalCustomer= Optional.of(customerInput);
 		Customer updateCustomer = new Customer();
 		updateCustomer.setUserId(1);
-		updateCustomer.setCustomerName("Gaurav Shrivastava");
+		updateCustomer.setCustomerName("arifa");
 		updateCustomer.setMobileNumber("9876543210");
-		updateCustomer.setEmailId("gaurav0103@gmail.com");
-		updateCustomer.setPassword("gaurav0103");
-		updateCustomer.setDateOfBirth(LocalDate.parse("2020-01-08"));
-		updateCustomer.setGender("Male");
+		updateCustomer.setEmailId("arifa0103@gmail.com");
+		updateCustomer.setPassword("sachin0103");
+		updateCustomer.setDateOfBirth(LocalDate.parse("2021-03-15"));
+		updateCustomer.setGender("feMale");
 		updateCustomer.setNationality("Indian");
-		updateCustomer.setAadharNumber("1231231223");
+		updateCustomer.setAadharNumber("123456987654");
 		updateCustomer.setPanNumber("123456yuio");
 
 		when(customerRepo.findById(1)).thenReturn(optionalCustomer);

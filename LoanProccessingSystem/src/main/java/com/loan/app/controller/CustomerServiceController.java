@@ -36,7 +36,6 @@ import io.swagger.annotations.ApiOperation;
  * "/viewall" to viewall the customers available in the database
  * "/viewbydate/{date_of_applicaton}"
 
- * Author : Anshuman Biswal 
  * */
 
 @Validated
@@ -57,7 +56,7 @@ public class CustomerServiceController {
 
 	@GetMapping("/home")
 	public String homeRequest() {
-		return "Welcome : Home Loan Application (Version 1.0)";
+		return "Welcome : Loan Application ";
 	}
 	
 	@ApiOperation(value = "POST mapping to add new customers to the LOAN_USER table in the Database", response = Customer.class)

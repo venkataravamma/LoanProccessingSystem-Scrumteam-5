@@ -24,7 +24,6 @@ import com.loan.app.service.impl.LoanVerificationManagerServiceImpl;
 /* Loan Verification Manager Service Testing
  * Testing the status update of Loan verification by passing status of loan application
  * 
- * Author : Gaurav Shrivastava
  * */
 
 

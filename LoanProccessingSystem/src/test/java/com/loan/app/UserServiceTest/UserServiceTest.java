@@ -19,7 +19,6 @@ import com.loan.app.service.impl.UserServiceImpl;
  * Testing the condition by adding an Admin, in Admin we pass UserId, Password and Role.
  * Testing the condition by adding a Loan verification Manager, in Finance Officer we pass UserId, Password and Role.
  * 
- * Author : Blesy Helen
  * */
 
  class UserServiceTest {
@@ -47,7 +46,7 @@ import com.loan.app.service.impl.UserServiceImpl;
 	
 		User input = new User();
 		input.setUserId(2);
-		input.setPassword("Helen");
+		input.setPassword("venky123");
 		input.setRole("Admin");
  
 		
@@ -59,13 +58,13 @@ import com.loan.app.service.impl.UserServiceImpl;
 	}
 	@Test
 	//@Disabled
-	@DisplayName("Add financeofficer as User")
+	@DisplayName("Add loanManager as User")
 	void addLoanVerifivationManager() {
 	
 		User input = new User();
-		input.setUserId(2);
+		input.setUserId(3);
 		input.setPassword("Anu");
-		input.setRole("financeofficer");
+		input.setRole("loanManager");
         
 		
 		when(userRepo.save(input)).thenReturn(input);

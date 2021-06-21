@@ -38,7 +38,7 @@ public class User {
 		@ApiModelProperty(name = "User Role", value = "It holds only alphabets and accepts either User or Admin or LoanVerificationManager rr or Customer", required = true)
 		@NotEmpty(message = "Role Type can't be empty!")
 		@Size(min = 2, max = 14, message = "Invalid Role please enter a vaild Role!")
-		@Pattern(regexp = ("^(user|admin|loanVerificationManager|customer)$"), message = "INVALID Role PLEASE ENTER AGAIN")
+		@Pattern(regexp = ("^(user|admin|loanManager|customer)$"), message = "INVALID Role PLEASE ENTER AGAIN")
 		@Pattern(regexp = "^[a-zA-Z]*$", message = "Accepts only alphabets! re-enter the role")
 		private String role;
 

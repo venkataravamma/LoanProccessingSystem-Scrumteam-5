@@ -16,7 +16,6 @@ import com.loan.app.service.LoanVerificationManagerService;
  *LoanVerificationService checks for the existing of loan application and 
  *other field as per necessity if existing
  *
- * Author : Gaurav Shrivastava 
  * */
 
 @Service
@@ -48,4 +47,3 @@ public class LoanVerificationManagerServiceImpl implements LoanVerificationManag
 	}
 
 }
-//By Gaurav Shrivastava

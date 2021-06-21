@@ -27,7 +27,6 @@ import com.loan.app.util.EmiCalculator;
  * List<LoanAgreement> retrieveAllLoanAgreement() to get all the loan agreement
  * LoanAgreement retrieveLoanAgreementById(long loanAgreementId)throws InvalidLoanAgreementException to get loan agreement by loan Id
  
- * Author : Bharath Surya 
  * */
 
 
@@ -126,6 +125,27 @@ public class LoanAgreementServiceImpl implements LoanAgreementService {
 				emi9.setInterestAmount(0.10);
 				emi9.setLoanAmount(loanAmount);
 				allemis.add(emi9);
+               
+				EMI emi10 = new EMI();
+				emi10.setEmiAmount(emi);
+				emi10.setDueDate(LocalDate.now().plusMonths(9));
+				emi10.setInterestAmount(0.10);
+				emi10.setLoanAmount(loanAmount);
+				allemis.add(emi10);
+
+				EMI emi11= new EMI();
+				emi11.setEmiAmount(emi);
+				emi11.setDueDate(LocalDate.now().plusMonths(10));
+				emi11.setInterestAmount(0.10);
+				emi11.setLoanAmount(loanAmount);
+				allemis.add(emi11);
+				
+				EMI emi12 = new EMI();
+				emi12.setEmiAmount(emi);
+				emi12.setDueDate(LocalDate.now().plusMonths(11));
+				emi12.setInterestAmount(0.10);
+				emi12.setLoanAmount(loanAmount);
+				allemis.add(emi11);
 
 				
 				repository.save(loanAgreement);

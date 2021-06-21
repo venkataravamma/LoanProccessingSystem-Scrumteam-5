@@ -33,7 +33,6 @@ import io.swagger.annotations.ApiOperation;
  * "/delete/{loan_id}" to delete the application from the database using the loan_id
  * "/viewallloan" to viewall the loan applications available in the database
 
- * Author : Ashwin 
  * */
 
 
@@ -55,7 +54,7 @@ public class LoanApplicationController {
 
 	@GetMapping("/home")
 	public String homeRequest() {
-		return "Welcome : Home Loan Application (Version 1.0)";
+		return "Welcome : Loan Application ";
 	}
 
 	@ApiOperation(value = "POST mapping to add new loan applications to the LOAN_APPLICATION table in the Database", response = LoanApplication.class)

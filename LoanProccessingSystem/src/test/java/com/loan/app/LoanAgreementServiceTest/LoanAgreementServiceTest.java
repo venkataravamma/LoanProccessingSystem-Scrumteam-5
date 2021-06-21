@@ -31,7 +31,6 @@ import com.loan.app.service.impl.LoanAgreementServiceImpl;
  * Testing update loan agreement by loan Id
  * Testing delete loan agreement by loan Id 
  * 
- * Author : Bharath Surya
  * */
 
 @SpringBootTest

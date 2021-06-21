@@ -6,7 +6,7 @@ public enum Status {
 	
 	APPROVED,
 		
-	WAITING_FOR_LoanManger_APPROVAL,	
+	WAITING_FOR_APPROVAL,	
 	
 	REJECTED,
 		

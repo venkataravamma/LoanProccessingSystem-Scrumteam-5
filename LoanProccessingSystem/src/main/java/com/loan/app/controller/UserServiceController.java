@@ -27,8 +27,7 @@ import io.swagger.annotations.ApiOperation;
  * "/adduserasloanmanager" to add finance officer to the user table
  * "/signin" to sign in into the account
  * "/signout" to sign out of the account
- * 
- * Author : 
+  
  * */
 
 

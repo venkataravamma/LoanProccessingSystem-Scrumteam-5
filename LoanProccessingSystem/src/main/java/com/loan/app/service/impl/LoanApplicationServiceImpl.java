@@ -23,7 +23,6 @@ import com.loan.app.service.LoanApplicationService;
  * List<LoanApplication> retrieveAllLoanApplication() to get all the loan applications
  * LoanApplication retrieveLoanApplicationById(long loanApplicationId) throws InvalidLoanApplicationException to get all the loan applications by loan Id
  * 
- * Author : Ashwin
  * */
 
 @Service

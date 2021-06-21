@@ -26,7 +26,6 @@ import io.swagger.annotations.ApiOperation;
 	 *  "/loan verification status"is a method the update the status of the loan application along 
 	 *  with other field officer find important to change
 	 *  
-	 *  Author : Gaurav Shrivastava 
 	 * */
 
 	@Validated
@@ -48,12 +47,12 @@ import io.swagger.annotations.ApiOperation;
 		//Method to check the connection with the webservice
 		@GetMapping("/home")
 		public String homeRequest() {
-			return "Welcome : Home Loan Application (Version 1.0)"; //returns String value
+			return "Welcome :  Loan verification Application (Version 1.0)"; //returns String value
 		}
 
 		
 		@ApiOperation(value="PUT mapping for the Finance Verification to update the status of application",response= LoanVerificationManagerController.class)
-		@PutMapping("/financestatus")
+		@PutMapping("/loanstatus")
 		//Method to update the status of application and loan amount if approved, passes the parameters of application class
 		public LoanApplication updateStatus(@RequestBody @Valid LoanApplication loanapplication) throws InvalidLoanApplicationException {
 			

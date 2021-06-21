@@ -32,7 +32,9 @@ public class EMI  {
 		private double emiAmount ;
 		
 		@ApiModelProperty(name = "Loan Amount", value = "It holds the Loan Amount", required = true)
-		@DecimalMin(value = "0", message = "Loan should not be zero")	private double loanAmount ;
+		@DecimalMin(value = "0", message = "Loan should not be zero")	
+		
+		private double loanAmount ;
 		
 		@ApiModelProperty(name = "Interest Amount", value = "It holds the Interest Amount", required = true)
 		@DecimalMin(value = "0", message = "Interest should not be zero")
