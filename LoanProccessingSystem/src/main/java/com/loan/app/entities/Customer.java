@@ -80,9 +80,9 @@ public class Customer extends User {
 
 	}
 
-	public Customer(int userId, String password, String role) {
+	public Customer(int userId,String emailId,String password, String role) {
 
-		super(userId, password, role);
+		super(userId,emailId, password, role);
 
 	}
 
@@ -104,9 +104,9 @@ public class Customer extends User {
 		this.panNumber = panNumber;
 	}
 
-	public Customer(int userId, String password, String role, String customerName, String mobileNumber, String emailId,
+	public Customer(int userId, String emailId,String password, String role, String customerName, String mobileNumber, String emailId,
 			LocalDate dateOfBirth, String gender, String nationality, String aadharNumber, String panNumber) {
-		super(userId, password, role);
+		super(userId,emailId, password, role);
 		this.customerName = customerName;
 		this.mobileNumber = mobileNumber;
 		this.emailId = emailId;
