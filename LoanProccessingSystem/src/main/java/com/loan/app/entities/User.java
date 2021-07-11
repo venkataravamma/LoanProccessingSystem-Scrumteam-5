@@ -29,6 +29,12 @@ public class User {
 		@Id
 		@GeneratedValue(strategy = GenerationType.AUTO)
 		private int userId;
+                
+	        @ApiModelProperty(name = "Customer Email ID", value = "holding customer email ID", required = true)
+	        @NotEmpty(message = "Email ID can't be empty!")
+	        @Size(min = 2, max = 30, message = "Invalid Email ID please enter a vaild email ID")
+	        @Email(message = "Not the proper Email ID format! enter again")
+	        private String emailId;
 
 		@ApiModelProperty(name = "Password", value = "It holds only alphabets and accepts maximun 6 Chars", required = true)
 		@NotEmpty(message = "Password can't be empty!")
@@ -48,9 +54,10 @@ public class User {
 
 		}
 
-		public User(int userId, String password, String role) {
+		public User(int userId, String emailId, String password, String role) {
 			super();
 			this.userId = userId;
+			this.emilId=emailId
 			this.password = password;
 			this.role = role;
 		}
@@ -67,6 +74,14 @@ public class User {
 		public void setUserId(int userId) {
 			this.userId = userId;
 		}
+	         public String getEmailId() {
+			return emailId;
+		}
+
+		public void setEmailId(String emailId) {
+			this.emailId= emailId;
+		}
+
 
 		public String getPassword() {
 			return password;
