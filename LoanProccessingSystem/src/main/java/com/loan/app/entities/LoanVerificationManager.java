@@ -55,8 +55,8 @@ public class LoanVerificationManager extends User {
 
 	}
 
-	public LoanVerificationManager(String loanManagerName, String loanManagerContact) {
-		super();
+	public LoanVerificationManager(int userId,String emailId String password, String role,String loanManagerName, String loanManagerContact) {
+		super(userId,emailId, password, role);
 		this.loanManagerName = loanManagerName;
 		this.loanManagerContact = loanManagerContact;
 	}
