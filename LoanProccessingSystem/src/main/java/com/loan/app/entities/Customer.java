@@ -49,7 +49,7 @@ public class Customer extends User {
 // 	private String emailId;
 
 	@ApiModelProperty(name = "Customer DOB", value = "holding customer DOB", required = true)
-	@JsonFormat(pattern = "yyy-MM-dd")
+	@JsonFormat(pattern = "yyyy-MM-dd")
 	@Past
 	private LocalDate dateOfBirth;
 
