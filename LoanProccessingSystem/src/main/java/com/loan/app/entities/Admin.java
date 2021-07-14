@@ -31,8 +31,8 @@ public class Admin extends User {
 
 	}
 
-	public Admin(int userId,String emailId,String password, String role) {
-		super(userId,emailId, password, role);
+	public Admin(int userId,/*String emailId*/,String password, String role) {
+		super(userId,/*emailId*/, password, role);
 
 	}
 
@@ -51,7 +51,7 @@ public class Admin extends User {
 
 	}
 
-	public Admin(int userId,String emailId String password, String role, String adminName, String adminContact) {
+	public Admin(int userId,/*String emailId */,String password, String role, String adminName, String adminContact) {
 		super(userId,emailId, password, role);
 		this.adminName = adminName;
 		this.adminContact = adminContact;
