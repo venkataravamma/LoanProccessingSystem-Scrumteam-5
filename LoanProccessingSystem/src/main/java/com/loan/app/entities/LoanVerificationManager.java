@@ -19,7 +19,7 @@ public class LoanVerificationManager extends User {
 	@ApiModelProperty(name = "Loan Verification Manager Name", value = "It holds only alphabets", required = true)
 	@NotEmpty(message ="Loan Verification Mnager Name can't be empty!")
 	@Size(min = 3, max = 25, message = "Invalid Loan Verification Manager Name please enter a vaild Name!")
-	@Pattern(regexp = "^[A-Za-z]+", message = "INVALID PLEASE ENTER AGAIN")
+	@Pattern(regexp = "^[A-Za-z .]+", message = "INVALID PLEASE ENTER AGAIN")
 	private String loanManagerName;
 
 	@ApiModelProperty(name = "Loan Verification Manager Mobile Number", value = "It holds Loan verification Manager phone number", required = true)
@@ -45,8 +45,8 @@ public class LoanVerificationManager extends User {
 
 	}
 
-	public LoanVerificationManager(int userId,String emailId, String password, String role) {
-		super(userId,emailId, password, role);
+	public LoanVerificationManager(int userId,/*String emailId*/, String password, String role) {
+		super(userId,/*emailId*/, password, role);
 
 	}
 
@@ -55,7 +55,7 @@ public class LoanVerificationManager extends User {
 
 	}
 
-	public LoanVerificationManager(int userId,String emailId String password, String role,String loanManagerName, String loanManagerContact) {
+	public LoanVerificationManager(int userId,/*String emailId */,String password, String role,String loanManagerName, String loanManagerContact) {
 		super(userId,emailId, password, role);
 		this.loanManagerName = loanManagerName;
 		this.loanManagerContact = loanManagerContact;
