@@ -42,11 +42,11 @@ public class Customer extends User {
 	@Pattern(regexp = "^\\d{10}$", message = "Invalid input:Enter numbers only")
 	private String mobileNumber;
 
-	@ApiModelProperty(name = "Customer Email ID", value = "holding customer email ID", required = true)
-	@NotEmpty(message = "Email ID can't be empty!")
-	@Size(min = 2, max = 30, message = "Invalid Email ID please enter a vaild email ID")
-	@Email(message = "Not the proper Email ID format! enter again")
-	private String emailId;
+// 	@ApiModelProperty(name = "Customer Email ID", value = "holding customer email ID", required = true)
+// 	@NotEmpty(message = "Email ID can't be empty!")
+// 	@Size(min = 2, max = 30, message = "Invalid Email ID please enter a vaild email ID")
+// 	@Email(message = "Not the proper Email ID format! enter again")
+// 	private String emailId;
 
 	@ApiModelProperty(name = "Customer DOB", value = "holding customer DOB", required = true)
 	@JsonFormat(pattern = "yyy-MM-dd")
@@ -91,12 +91,12 @@ public class Customer extends User {
 		super(userId);
 	}
 
-	public Customer(String customerName, String mobileNumber, String emailId, LocalDate dateOfBirth, String gender,
+	public Customer(String customerName, String mobileNumber, /*String emailId*/, LocalDate dateOfBirth, String gender,
 			String nationality, String aadharNumber, String panNumber) {
 		super();
 		this.customerName = customerName;
 		this.mobileNumber = mobileNumber;
-		this.emailId = emailId;
+// 		this.emailId = emailId;
 		this.dateOfBirth = dateOfBirth;
 		this.gender = gender;
 		this.nationality = nationality;
@@ -104,12 +104,12 @@ public class Customer extends User {
 		this.panNumber = panNumber;
 	}
 
-	public Customer(int userId, String emailId,String password, String role, String customerName, String mobileNumber, String emailId,
+// 	public Customer(int userId, String emailId,String password, String role, String customerName, String mobileNumber,/* String emailId*/,
 			LocalDate dateOfBirth, String gender, String nationality, String aadharNumber, String panNumber) {
 		super(userId,emailId, password, role);
 		this.customerName = customerName;
 		this.mobileNumber = mobileNumber;
-		this.emailId = emailId;
+// 		this.emailId = emailId;
 		this.dateOfBirth = dateOfBirth;
 		this.gender = gender;
 		this.nationality = nationality;
@@ -133,13 +133,13 @@ public class Customer extends User {
 		this.mobileNumber = mobileNumber;
 	}
 
-	public String getEmailId() {
-		return emailId;
-	}
+// 	public String getEmailId() {
+// 		return emailId;
+// 	}
 
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
-	}
+// 	public void setEmailId(String emailId) {
+// 		this.emailId = emailId;
+// 	}
 
 	public LocalDate getDateOfBirth() {
 		return dateOfBirth;
